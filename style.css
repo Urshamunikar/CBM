@@ -1,103 +1,387 @@
 *{
     padding: 0;
     margin: 0;
- 
+    box-sizing: border-box;
+}
+body, html{
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Calibri;
+
+
+}
+body a{
+    text-decoration: none;
 }
 
-.wrapper{
-    display: flex;
-    height: 100%;
-    
+#wrapper{
+    width:1170px;
+    max-width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.container{
    
+    display: flex;
+    
 }
-
 .sidebar{
-    background-color:rgb(44, 39, 40);
-    flex:0.75;  
+    float:left;
+    width: 20%;
+    
+    background-color:rgb(44, 44, 44);
+
+    
 }
 .main{
-    background-color:orange;
-    flex: 4;
-  
+    width:80%;
+    float: right;
+
 }
 
 /* logo  */
 .logo img{
-    height: 100px;
-    width: 100px;
+    height: 125px;
+    width: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+
 }
 
 /* main menu */
 .menu ul li {
    list-style-type: none;
-   margin: 16px 32px 18px 25px;
-   font-weight: bold;
+   margin: 16px 32px 18px 35px;
+   font-size: 20px;
    
 }
 .menu ul li a{
-    text-decoration: none;
     color: white; 
 }
 
 /* Social */
 .social ul{
     display: flex;
-    
+
+
 
 }
-.social h6{
-    margin-top: 40px;
+.social h4{
     color: white;
-    margin-left: 20px;
+    margin: 50px 0 5px 20px;
+
+
 }
 
-.social ul li {
+.social ul li , .footer-center ul li{
     list-style: none;
     margin:10px 2px;
+    width: 40px;
+    display: inline-block;
     
 }
 .social ul li:first-child{
     margin-left: 20px;
 }
-.social ul li a{
+.social ul li a, .footer-center ul li a{
+    /*width:20px;*/
     text-decoration: none;
     border: 1px solid white;
-    padding: 5px;
+    padding:10px;
     border-radius: 50%;
     color: white; 
-    font-size: 10px;
+    font-size: 16px;
+
+}
+.social ul li a i, .footer-center ul li a i{
+
+    text-align: center;
+    width: 15px;
 }
 
 /* Main images*/
+.main-img{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(99, 168, 29);
+}
+
+
 .content1{
     position: relative;
     text-align: center;
     color: white; 
     overflow: hidden;
-    background: #28641d;  
+    height:500px;
+    /*background: rgb(152, 203, 84);  */
    
   
 }
 .main-img img{
     width: 100%;
-    height: 500px;
+    height: 100%;
     opacity: 0.4;
+    
 }
+
 .content-on-img{
     font-size: 55px;
     position: absolute;
     top: 50%;
     left: 80%;
     transform: translate(-50%, -50%);
-
-
+    
 }
 .content1-btn{
-    background-color: rgb(118, 202, 223);
-    padding: 5px;
+    border: none;
+    background-color: rgb(142, 214, 252);
+    padding: 7px;
     position: absolute;
     top: 70%;
-    left: 65%;
+    left: 66%;
+}
+.content1-btn a{
+    color: black;
+    font-size: 16px;
+    
 }
 
+/* COntentsecond */
+.content2{
+    width: 100%;
+    padding:50px;
+
+
+}
+.content2 p{
+    font-size: 22px;
+}
+.content2 img{
+    float: right;
+    height: 300px;
+    width: 400px;
+    margin: 20px 0px 0px 30px;
+}
+.text-with-img{
+    /* overflow: auto; */
+    margin-top: 15px;
     
+}
+.text-with-img p{
+    text-align: justify;
+  
+}
+
+/* Content 3 */
+.content3{
+    width: 100%;
+}
+ .content3 h1{
+   
+    background-color: rgb(84, 193, 252);
+     height: 60px;
+     text-align: center;
+     padding-top: 10px;
+     color:white;
+}
+
+.services {
+    width:100%;
+	
+    z-index:1;
+    min-width: 50%;
+}
+.service{
+    height: 170px;
+
+    display: inline-block;
+    width: 27%;
+
+    margin: 10px 25px 0px 25px ;
+    overflow: hidden;
+    /*float: left;*/
+    /*display: block;*/
+
+}
+.service1{
+    height: 170px;
+    display:inline-block;
+    width: 100%;
+    margin: 10px 25px 0px 25px ;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.services img{
+    width: 110px;
+    height: 120px;
+    border: 2px solid rgb(142, 214, 252);
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+#service{
+    width:27%;
+
+}
+#service img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.service1 p{
+    text-align: left;
+    margin-left: 3%;
+}
+.service p{
+    margin-top:5px;
+    text-align: center;
+    font-size: 16px;
+
+}
+
+
+
+.content4 img{
+    height: 300px;
+    width: 500px;
+
+}
+.content4{
+	
+	display: flex;
+	justify-content: space-around;
+	margin: 20px 10px 50px;
+}
+
+
+
+.content5{
+	width: 100%;
+	background-color: rgb(149, 209, 71);
+	margin-bottom: 40px;
+}
+.content5 .image-slider ul {
+	display: flex;
+	justify-content: space-evenly;
+	
+}
+.image-slider img{
+	height: 150px;
+	width: 150px;
+	margin-bottom: 15px;
+}
+.image-slider ul li{
+	list-style: none;
+	margin-bottom: 30px;
+}
+.content5 h1{
+	color: white;
+	text-align: center;
+	margin-bottom: 30px;
+}
+.image-slider li h4{
+	color: white;
+}
+.image-slider .team-icon i{
+    padding: 5px;
+    cursor: pointer;
+}
+.image-slider .team-icon i:first-child{
+	padding-left: 0px;
+}
+.prev, .next {
+  	cursor: pointer;
+	color: white;
+	font-size: 30px;
+	font-weight: bold;
+	position: relative;
+	top: 25%;
+}
+
+
+.content6{
+    margin: 20px 10px;
+    background-image: url(img/meeting1.jpg);
+    width: 100%;
+    height: 600px;
+}
+.content6 img{
+    height: 70px;
+    position: relative;
+    top: 50%;
+    left: 46%;
+    cursor: pointer;
+    
+}
+
+.content7{
+    background-color:  rgb(142, 214, 252);
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.content8{
+    
+    background-color:rgb(142, 214, 252);
+    width: 100%;
+}
+.content8-img{
+    display: flex;
+    justify-content: space-between;
+}
+.content8 img{
+    margin: 20px 10px;
+    height: 150px;
+    width: 170px;
+   
+}
+
+
+.footer{
+    background-color: rgb(79, 79, 79);
+    width: 100%;
+    
+	padding: 55px 50px;
+    margin-top: 80px;
+    color: white;
+}
+.footer-left,.footer-center,.footer-right{
+    display: inline-block;
+    vertical-align: top;
+}
+.footer-left{
+    width: 33%;
+}
+.footer-left li{
+    list-style: none;
+}
+.footer-left .links{
+    margin-top: 20px;
+}
+
+.footer-left .links a{ 
+    color: white;
+    
+}
+.footer-center{
+    width: 40%;
+    margin-top: 30px;
+}
+
+
+.footer-center p{
+    margin-top: 20px;
+}
+.footer-right{
+    width: 25%;
+    margin-top: 10px;
+}
+.footer-right span{
+    font-weight: bold;
+}
