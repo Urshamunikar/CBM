@@ -1,209 +1,390 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CBM</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="phone.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>CBM</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+
+
+
+
 </head>
 
 <body>
-    <div id="wrapper">
-        <div class="container">
+  <div class="page-wrapper chiller-theme toggled">
+    <a id="show-sidebar" class="btn btn-sm btn-dark" href="#">
+      <i class="fas fa-bars"></i>
+    </a>
+    <nav id="sidebar" class="sidebar-wrapper">
+      <div class="sidebar-content">
+        <div class="sidebar-brand">
 
-
-            <div class="sidebar">
-                <div class="menu">
-                    <ul>
-                        <li><a class="logo" href="#"><img src="img/logo.png" alt="logo"></a></li>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Team</a></li>
-                        <li><a href="#">Clients</a></li>
-                        <li><a href="#">Events</a></li>
-                        <li><a href="#">Gallery</a></li>
-                        <li><a href="#">Pricing</a></li>
-                        <li><a href="#">Contact</a></li>
-
-                    </ul>
-                </div>
-                <div class="social">
-                    <h4>Follow us on:</h4>
-                    <ul>
-                        <li><a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a></li>
-                        <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="https://www.twitter.com/"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a></li>
-                    </ul>
-                </div>
-
-            </div>
-            <div class="main">
-                <div class="content1">
-                    <div class="main-img">
-
-                        <img src="img/mainimage.jpg" alt="">
-                    </div>
-                    <div class="content-on-img">
-                        Comprehensive <span>Business Management</span> <br>
-                    </div>
-                    <button class="content1-btn"><a href="#services">Our Services</a></button>
-                </div>
-                <div class="content2">
-                    <h1>What is CBM?</h1>
-                    <p>Comprehensive Business Management Nepal Pvt. Ltd. is a Consultancy firm carrying out internal
-                        auditing, advisory services and other related service. </p>
-                    <div class="text-with-img">
-                        <h2>Internal Auditing<img src="img/calculator.jpg" alt=""></h2>
-                        <p> Internal audit is independence and objectivity consulting service, which is design to add
-                            value to the business and improve the entity's operation.
-                            <br><br>
-                            It provides a systematic and disciplined approach to evaluating and assessing risk
-                            management, internal control, and corporate governance.<br><br>
-                            Internal audit activities are generally focused on three principles areas including, but not
-                            limited to, Internal Control Over Financial Reporting, Time Value of
-                            Money, and Compliance Review.</p>
-                    </div>
-
-                </div>
-                <div class="content3">
-                    <h1 id="services"> OUR SERVICES</h1>
-                    <div class="services">
-
-                        <div class="service">
-                            <img src="  img/service.png" alt="">
-                            <p>Accounting</p>
-                        </div>
-                        <div class="service">
-                            <img src="img/service.png" alt="">
-                            <p>Internal Auditing</p>
-                        </div>
-                        <div class="service">
-                            <img src="img/service.png" alt="">
-                            <p>Financial Advisory</p>
-                        </div>
-                        <div class="service">
-                            <img src="img/service.png" alt="">
-                            <p>Account & taxation training</p>
-                        </div>
-                        <div class="service">
-                            <img src="img/service.png" alt="">
-                            <p>Office Management</p>
-                        </div>
-                        <div class="service">
-                            <img src="img/service.png" alt="">
-                            <p>Company registration & other OCR Compiliance</p>
-                        </div>
-                        <div class="service1">
-                            <div id="service">
-                                <img src="img/service.png" alt="">
-                            </div>
-                            <p>Tax Consultancy and <br>Related Work (PAN/VATRegistration,Tax Audit)</p>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="content4">
-
-                    <img src="img/statics.jpg" alt="">
-                    <img src="img/cbm.jpg" alt="">
-
-                </div>
-                <div class="content5">
-                    <h1>Our Team</h1>
-                    <div class="image-slider">
-                        <ul>
-                            <li><a class="prev">&#10094;</a></li>
-                            <li>
-                                <img src="img/passport.jpg" alt="">
-
-                                <h4>Robert Staford</h4>
-                                <p>Founder</p>
-
-                                <div class="team-icon"><i class="fa fa-facebook"></i><i class="fa fa-twitter"></i><i
-                                        class="fa fa-linkedin"></i></div>
-                            </li>
-                            <li>
-                                <img src="img/passport.jpg" alt="">
-                                <h4>Brennan kean</h4>
-                                <p>Manager</p>
-
-                                <div class="team-icon"><i class="fa fa-facebook"></i><i class="fa fa-twitter"></i><i
-                                        class="fa fa-linkedin"></i></div>
-                            </li>
-                            <li>
-                                <img src="img/passport.jpg" alt="">
-
-                                <h4>Charles Leo</h4>
-                                <p>Financial Officer</p>
-
-                                <div class="team-icon"><i class="fa fa-facebook"></i><i class="fa fa-twitter"></i><i
-                                        class="fa fa-linkedin"></i></div>
-                            </li>
-                            <li>
-                                <img src="img/passport.jpg" alt="">
-
-                                <h4>Jack Brown</h4>
-                                <p>Controller</p>
-
-                                <div class="team-icon"><i class="fa fa-facebook"></i><i class="fa fa-twitter"></i><i
-                                        class="fa fa-linkedin"></i></div>
-                            </li>
-                            <li><a class="next">&#10095;</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="content6">
-                    <img src="img/play.png" alt="">
-
-                </div>
-                <div class="content7">
-                    <h2>OUR CLIENTS</h2>
-
-                </div>
-                <div class="content8">
-                    <div class="content8-img">
-                        <img src="img/nike.png" alt="">
-                        <img src="img/biba.jpg" alt="">
-                        <img src="img/adidas.jpg" alt="">
-                        <img src="img/anwar.jpg" alt="">
-                        <img src="img/guerlain.svg" alt="">
-                    </div>
-                </div>
-                <footer class="footer">
-                    <div class="footer-left">
-                        <h2>Get to know us <br> even more</h2>
-                        <ul class="links">
-                            <li><a href="">Company's Privacy Policy</a></li>
-                            <li><a href="">Terms Of Usage</a></li>
-                            <li><a href="">About Our Company</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-center">
-                        <ul>
-                            <li><a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a></li>
-                            <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="https://www.twitter.com/"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a></li>
-                        </ul>
-                        <p>Malpot Chowk(opp, to IRD Office) <br>Bharatpur - 12, Chitwan</p>
-            
-
-                    </div>
-                    <div class="footer-right">
-                        <p>For any inquiry:<br><span>9865740946</span><br>Pramod Gautam<br><span>985505689</span><br>Bikesh Sapkota</p>
-                        
-
-                    </div>
-
-                </footer>
-
-            </div>
+          <div id="close-sidebar">
+            <i class="fa fa-times"></i>
+          </div>
         </div>
+        <div class="sidebar-header">
+          <img src="/img/logo.png" alt="">
+        </div>
+        <!-- sidebar-header  -->
+
+        <div class="sidebar-menu">
+          <ul>
+
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/index.html#services">Services</a></li>
+            <li><a href="/index.html#clients">Clients</a></li>
+            <li><a href="/index.html#team">Team</a></li>
+            <li><a href="/events.html">Events</a></li>
+            <li><a href="/gallery.html">Gallery</a></li>
+            <li><a href="/pricing.html">Pricing</a></li>
+            <li><a href="/index.html#contact">Contact</a></li>
+
+          </ul>
+
+        </div>
+        <!-- sidebar-menu  -->
+      </div>
+      <!-- sidebar-content  -->
+      <div class="sidebar-footer">
+        <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+        <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+        <a href="https://www.twitter.com/"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a>
+
+      </div>
+    </nav>
+    <!-- sidebar-wrapper  -->
+    <main class="page-content">
+      <div class="container-fluid">
+
+        <hr>
+        <div class="row">
+          <div class="form-group col-md-12">
+            <div class="content1">
+              <div class="main-img">
+
+                <img src="img/mainimage.jpg" alt="">
+              </div>
+              <div class="content-on-img">
+                Comprehensive <br><span>Business Management</span>
+              </div>
+              <button class="content1-btn"><a href="#services">Our Services</a></button>
+            </div>
+            <div class="content2">
+              <h1>What is CBM?</h1>
+              <p>Comprehensive Business Management Nepal Pvt. Ltd. is a Consultancy firm carrying out internal
+                auditing, advisory services and other related service. </p>
+              <div class="text-with-img">
+                <h2>Internal Auditing<img src="img/calculator.jpg" alt=""></h2>
+                <p> Internal audit is independence and objectivity consulting service, which is design to add
+                  value to the business and improve the entity's operation.
+                  <br><br>
+                  It provides a systematic and disciplined approach to evaluating and assessing risk
+                  management, internal control, and corporate governance.<br><br>
+                  Internal audit activities are generally focused on three principles areas including, but not
+                  limited to, Internal Control Over Financial Reporting, Time Value of
+                  Money, and Compliance Review.
+                </p>
+              </div>
+            </div>
+            <h1 id="services" class="content3">Our Services</h1>
+            <div class="container">
+              <div class="row">
+                <div class="col-sm services">
+                  <img src="/img/services.png" alt="">
+                  <p>Accounting</p>
+                </div>
+                <div class="col-sm services">
+                  <img src="/img/services.png" alt="">
+                  <p>Internal Auditing</p>
+                </div>
+                <div class="col-sm services">
+                  <img src="/img/services.png" alt="">
+                  <p>Financial Advisory</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm services">
+                  <img src="/img/services.png" alt="">
+                  <p>Account & taxation training</p>
+                </div>
+                <div class="col-sm services">
+                  <img src="/img/services.png" alt="">
+                  <p>Office Management</p>
+                </div>
+                <div class="col-sm services">
+                  <img src="/img/services.png" alt="">
+                  <p>Company registration & other OCR Compiliance</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm services">
+                  <img src="/img/services.png" alt="">
+                  <p>Tax Consultancy and <br>Related Work (PAN/VATRegistration,Tax Audit)</p>
+                </div>
+                <div class="col-sm"></div>
+                <div class="col-sm"></div>
+
+              </div>
+            </div>
+
+            <div class="container" style="margin: 7% 0;">
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="progress1" style="width: 100%; padding: 20px; background-color: rgb(149, 209, 71);">
+                    <h1 style="font-size:1rem">Comprehensive Business Management</h1>
+                    <p>Strategy & Analysis</p>
+                    <div class="container1">
+                      <div class="skill skill1">35%</div>
+                    </div>
+
+                    <p>Demand-puff infiation</p>
+                    <div class="container1">
+                      <div class="skill skill2">50%</div>
+                    </div>
+                    <p>Economic Growth</p>
+                    <div class="container1">
+                      <div class="skill skill3 ">82%</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <img width="100%" src="/img/cbm.jpg" alt="">
+                </div>
+              </div>
+
+            </div>
+
+            <!--Carousel Wrapper-->
+            <div style="background-color: rgb(149, 209, 71); margin-bottom:40px ;">
+            <h1 id="team" style="color: white;text-align: center; margin: 10px;">Our Team</h1>
+<div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel" >
+
+  <!--Controls-->
+  <div class="controls-top">
+    <a class="btn-floating" href="#multi-item-example" data-slide="prev"><i class="fas fa-chevron-left"></i></a>
+    <a class="btn-floating" href="#multi-item-example" data-slide="next"><i
+        class="fas fa-chevron-right"></i></a>
+  </div>
+  <!--/.Controls-->
+
+  <!--Indicators-->
+  <ol class="carousel-indicators">
+    <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
+    <li data-target="#multi-item-example" data-slide-to="1"></li>
+    
+  </ol>
+  <!--/.Indicators-->
+
+  <!--Slides-->
+  <div class="carousel-inner" role="listbox">
+
+    <!--First slide-->
+    <div class="carousel-item active">
+
+      <div class="col-md-3" style="float:left">
+       <div class="card mb-2">
+          <img class="card-img-top"
+            src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg" alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title">Card title</h4>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+              card's content.</p>
+           
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3" style="float:left">
+        <div class="card mb-2">
+          <img class="card-img-top"
+            src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg" alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title">Card title</h4>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+              card's content.</p>
+           
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3" style="float:left">
+        <div class="card mb-2">
+          <img class="card-img-top"
+            src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg" alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title">Card title</h4>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+              card's content.</p>
+           
+          </div>
+        </div>
+      </div>
+      
+       <div class="col-md-3" style="float:left">
+       <div class="card mb-2">
+          <img class="card-img-top"
+            src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg" alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title">Card title</h4>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+              card's content.</p>
+           
+          </div>
+        </div>
+      </div>
+
     </div>
+    <!--/.First slide-->
+
+    <!--Second slide-->
+    <div class="carousel-item">
+
+      <div class="col-md-3" style="float:left">
+        <div class="card mb-2">
+          <img class="card-img-top"
+            src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg" alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title">Card title</h4>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+              card's content.</p>
+           
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3" style="float:left">
+        <div class="card mb-2">
+          <img class="card-img-top"
+            src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(47).jpg" alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title">Card title</h4>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+              card's content.</p>
+           
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3" style="float:left">
+        <div class="card mb-2">
+          <img class="card-img-top"
+            src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(48).jpg" alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title">Card title</h4>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+              card's content.</p>
+           
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-3" style="float:left">
+        <div class="card mb-2">
+          <img class="card-img-top"
+            src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(47).jpg" alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title">Card title</h4>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+              card's content.</p>
+          
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!--/.Second slide-->
+
+   
+
+  </div>
+  <!--/.Slides-->
+</div>
+</div>
+<!--/.Carousel Wrapper-->
+
+
+            <div class="content6">
+              <img src="img/meeting1.jpg" alt="">
+
+          </div>
+          <div id="clients" class="content7" style="margin: 20px 0; padding: 20px;">
+              <h2>OUR CLIENTS</h2>
+
+          </div>
+          <div class="content8">
+              <div class="content8-img">
+                  <img src="img/nike.png" alt="">
+                  <img src="img/biba.jpg" alt="">
+                  <img src="img/adidas.jpg" alt="">
+                  <img src="img/anwar.jpg" alt="">
+                  <img src="img/guerlain.svg" alt="">
+              </div>
+          </div>
+          <footer class="footer" id="contact">
+              <div class="footer-left">
+                  <h2>Get to know us <br> even more</h2>
+                  <ul class="links">
+                      <li><a href="">Company's Privacy Policy</a></li>
+                      <li><a href="">Terms Of Usage</a></li>
+                      <li><a href="">About Our Company</a></li>
+                  </ul>
+              </div>
+              <div class="footer-center">
+                  <ul>
+                      <li><a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a></li>
+                      <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                      <li><a href="https://www.twitter.com/"><i class="fa fa-twitter"></i></a></li>
+                      <li><a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a></li>
+                  </ul>
+                  <p>Malpot Chowk(opp, to IRD Office) <br>Bharatpur - 12, Chitwan</p>
+      
+
+              </div>
+              <div class="footer-right">
+                  <p>For any inquiry:<br><span>9865740946</span><br>Pramod Gautam<br><span>985505689</span><br>Bikesh Sapkota</p>
+                  
+
+              </div>
+
+          </footer>
+
+
+
+
+
+
+
+
+          </div>
+
+        </div>
+    </main>
+    <!-- page-content" -->
+  </div>
+  <!-- page-wrapper -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
 </body>
+<script src="script.js"></script>
 
 </html>
